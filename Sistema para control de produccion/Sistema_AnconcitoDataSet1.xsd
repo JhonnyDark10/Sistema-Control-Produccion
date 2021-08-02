@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sistema_AnconcitoDataSet1" targetNamespace="http://tempuri.org/Sistema_AnconcitoDataSet1.xsd" xmlns:mstns="http://tempuri.org/Sistema_AnconcitoDataSet1.xsd" xmlns="http://tempuri.org/Sistema_AnconcitoDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Sistema_AnconcitoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Sistema_AnconcitoConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sistema_para_control_de_produccion.My.MySettings.GlobalReference.Default.Sistema_AnconcitoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VISTA2TableAdapter" GeneratorDataComponentClassName="VISTA2TableAdapter" Name="VISTA2" UserDataComponentName="VISTA2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Sistema_AnconcitoConnectionString (MySettings)" DbObjectName="Sistema_Anconcito.dbo.VISTA2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT emp_cedula, emp_nombre, emp_apellidoPaterno, emp_celular, est_civil_descripcion, tip_descripción FROM dbo.VISTA2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="emp_cedula" DataSetColumn="emp_cedula" />
+              <Mapping SourceColumn="emp_nombre" DataSetColumn="emp_nombre" />
+              <Mapping SourceColumn="emp_apellidoPaterno" DataSetColumn="emp_apellidoPaterno" />
+              <Mapping SourceColumn="emp_celular" DataSetColumn="emp_celular" />
+              <Mapping SourceColumn="est_civil_descripcion" DataSetColumn="est_civil_descripcion" />
+              <Mapping SourceColumn="tip_descripción" DataSetColumn="tip_descripción" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Sistema_AnconcitoDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Sistema_AnconcitoDataSet1" msprop:Generator_UserDSName="Sistema_AnconcitoDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VISTA2" msprop:Generator_TableClassName="VISTA2DataTable" msprop:Generator_TableVarName="tableVISTA2" msprop:Generator_TablePropName="VISTA2" msprop:Generator_RowDeletingName="VISTA2RowDeleting" msprop:Generator_RowChangingName="VISTA2RowChanging" msprop:Generator_RowEvHandlerName="VISTA2RowChangeEventHandler" msprop:Generator_RowDeletedName="VISTA2RowDeleted" msprop:Generator_UserTableName="VISTA2" msprop:Generator_RowChangedName="VISTA2RowChanged" msprop:Generator_RowEvArgName="VISTA2RowChangeEvent" msprop:Generator_RowClassName="VISTA2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emp_cedula" msprop:Generator_ColumnVarNameInTable="columnemp_cedula" msprop:Generator_ColumnPropNameInRow="emp_cedula" msprop:Generator_ColumnPropNameInTable="emp_cedulaColumn" msprop:Generator_UserColumnName="emp_cedula">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_nombre" msprop:Generator_ColumnVarNameInTable="columnemp_nombre" msprop:Generator_ColumnPropNameInRow="emp_nombre" msprop:Generator_ColumnPropNameInTable="emp_nombreColumn" msprop:Generator_UserColumnName="emp_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_apellidoPaterno" msprop:Generator_ColumnVarNameInTable="columnemp_apellidoPaterno" msprop:Generator_ColumnPropNameInRow="emp_apellidoPaterno" msprop:Generator_ColumnPropNameInTable="emp_apellidoPaternoColumn" msprop:Generator_UserColumnName="emp_apellidoPaterno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_celular" msprop:Generator_ColumnVarNameInTable="columnemp_celular" msprop:Generator_ColumnPropNameInRow="emp_celular" msprop:Generator_ColumnPropNameInTable="emp_celularColumn" msprop:Generator_UserColumnName="emp_celular">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="est_civil_descripcion" msprop:Generator_ColumnVarNameInTable="columnest_civil_descripcion" msprop:Generator_ColumnPropNameInRow="est_civil_descripcion" msprop:Generator_ColumnPropNameInTable="est_civil_descripcionColumn" msprop:Generator_UserColumnName="est_civil_descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tip_descripción" msprop:Generator_ColumnVarNameInTable="columntip_descripción" msprop:Generator_ColumnPropNameInRow="tip_descripción" msprop:Generator_ColumnPropNameInTable="tip_descripciónColumn" msprop:Generator_UserColumnName="tip_descripción">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

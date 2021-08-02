@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sistema_AnconcitoDataSet" targetNamespace="http://tempuri.org/Sistema_AnconcitoDataSet.xsd" xmlns:mstns="http://tempuri.org/Sistema_AnconcitoDataSet.xsd" xmlns="http://tempuri.org/Sistema_AnconcitoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Sistema_AnconcitoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Sistema_AnconcitoConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sistema_para_control_de_produccion.My.MySettings.GlobalReference.Default.Sistema_AnconcitoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VISTA_EMBARCACIONESTableAdapter" GeneratorDataComponentClassName="VISTA_EMBARCACIONESTableAdapter" Name="VISTA_EMBARCACIONES" UserDataComponentName="VISTA_EMBARCACIONESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Sistema_AnconcitoConnectionString (MySettings)" DbObjectName="Sistema_Anconcito.dbo.VISTA_EMBARCACIONES" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tipemb_nombre, emb_numMatricula, emb_nombre, emb_descripcion, emb_fechaAdquisicion, emb_precio, emb_estadoO FROM dbo.VISTA_EMBARCACIONES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tipemb_nombre" DataSetColumn="tipemb_nombre" />
+              <Mapping SourceColumn="emb_numMatricula" DataSetColumn="emb_numMatricula" />
+              <Mapping SourceColumn="emb_nombre" DataSetColumn="emb_nombre" />
+              <Mapping SourceColumn="emb_descripcion" DataSetColumn="emb_descripcion" />
+              <Mapping SourceColumn="emb_fechaAdquisicion" DataSetColumn="emb_fechaAdquisicion" />
+              <Mapping SourceColumn="emb_precio" DataSetColumn="emb_precio" />
+              <Mapping SourceColumn="emb_estadoO" DataSetColumn="emb_estadoO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Sistema_AnconcitoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Sistema_AnconcitoDataSet" msprop:Generator_UserDSName="Sistema_AnconcitoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VISTA_EMBARCACIONES" msprop:Generator_TableClassName="VISTA_EMBARCACIONESDataTable" msprop:Generator_TableVarName="tableVISTA_EMBARCACIONES" msprop:Generator_TablePropName="VISTA_EMBARCACIONES" msprop:Generator_RowDeletingName="VISTA_EMBARCACIONESRowDeleting" msprop:Generator_RowChangingName="VISTA_EMBARCACIONESRowChanging" msprop:Generator_RowEvHandlerName="VISTA_EMBARCACIONESRowChangeEventHandler" msprop:Generator_RowDeletedName="VISTA_EMBARCACIONESRowDeleted" msprop:Generator_UserTableName="VISTA_EMBARCACIONES" msprop:Generator_RowChangedName="VISTA_EMBARCACIONESRowChanged" msprop:Generator_RowEvArgName="VISTA_EMBARCACIONESRowChangeEvent" msprop:Generator_RowClassName="VISTA_EMBARCACIONESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipemb_nombre" msprop:Generator_ColumnVarNameInTable="columntipemb_nombre" msprop:Generator_ColumnPropNameInRow="tipemb_nombre" msprop:Generator_ColumnPropNameInTable="tipemb_nombreColumn" msprop:Generator_UserColumnName="tipemb_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emb_numMatricula" msprop:Generator_ColumnVarNameInTable="columnemb_numMatricula" msprop:Generator_ColumnPropNameInRow="emb_numMatricula" msprop:Generator_ColumnPropNameInTable="emb_numMatriculaColumn" msprop:Generator_UserColumnName="emb_numMatricula" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emb_nombre" msprop:Generator_ColumnVarNameInTable="columnemb_nombre" msprop:Generator_ColumnPropNameInRow="emb_nombre" msprop:Generator_ColumnPropNameInTable="emb_nombreColumn" msprop:Generator_UserColumnName="emb_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emb_descripcion" msprop:Generator_ColumnVarNameInTable="columnemb_descripcion" msprop:Generator_ColumnPropNameInRow="emb_descripcion" msprop:Generator_ColumnPropNameInTable="emb_descripcionColumn" msprop:Generator_UserColumnName="emb_descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emb_fechaAdquisicion" msprop:Generator_ColumnVarNameInTable="columnemb_fechaAdquisicion" msprop:Generator_ColumnPropNameInRow="emb_fechaAdquisicion" msprop:Generator_ColumnPropNameInTable="emb_fechaAdquisicionColumn" msprop:Generator_UserColumnName="emb_fechaAdquisicion" type="xs:dateTime" />
+              <xs:element name="emb_precio" msprop:Generator_ColumnVarNameInTable="columnemb_precio" msprop:Generator_ColumnPropNameInRow="emb_precio" msprop:Generator_ColumnPropNameInTable="emb_precioColumn" msprop:Generator_UserColumnName="emb_precio" type="xs:double" minOccurs="0" />
+              <xs:element name="emb_estadoO" msprop:Generator_ColumnVarNameInTable="columnemb_estadoO" msprop:Generator_ColumnPropNameInRow="emb_estadoO" msprop:Generator_ColumnPropNameInTable="emb_estadoOColumn" msprop:Generator_UserColumnName="emb_estadoO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

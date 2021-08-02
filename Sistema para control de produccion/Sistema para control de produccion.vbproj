@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78F99DAC-3BDA-4C72-AFD2-70AB4224BC46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Sistema_para_control_de_produccion</RootNamespace>
+    <AssemblyName>Sistema para control de produccion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema para control de produccion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema para control de produccion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>folders_red_scheduled_tasks_10933.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion-Seguridad\frm_lista_empleados_usuarios.Designer.vb">
+      <DependentUpon>frm_lista_empleados_usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion-Seguridad\frm_lista_empleados_usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Asigna\frm_asignarrecursos.Designer.vb">
+      <DependentUpon>frm_asignarrecursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asigna\frm_asignarrecursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Mod_Conexion.vb" />
+    <Compile Include="Modulos\Mod_variables_globales.vb" />
+    <Compile Include="Administracion-Seguridad\perfiles.designer.vb">
+      <DependentUpon>perfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion-Seguridad\perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frm_Acceso.Designer.vb">
+      <DependentUpon>frm_Acceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frm_Acceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frm_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frm_Principal.Designer.vb">
+      <DependentUpon>frm_Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal\frm_splash.Designer.vb">
+      <DependentUpon>frm_splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frm_splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Caja\frm_caja.Designer.vb">
+      <DependentUpon>frm_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Caja\frm_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Caja\frm_capital.Designer.vb">
+      <DependentUpon>frm_capital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Caja\frm_capital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_añadirEmbarcacion.Designer.vb">
+      <DependentUpon>frm_añadirEmbarcacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_añadirEmbarcacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_embarcaciones.Designer.vb">
+      <DependentUpon>frm_embarcaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_embarcaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_modificarEmbarcaciones.Designer.vb">
+      <DependentUpon>frm_modificarEmbarcaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Embarcaciones\frm_modificarEmbarcaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_añadirEmpleado.Designer.vb">
+      <DependentUpon>frm_añadirEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_añadirEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_Empleados.Designer.vb">
+      <DependentUpon>frm_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion-Seguridad\usuarios.designer.vb">
+      <DependentUpon>usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion-Seguridad\usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_modificarEmpleado.Designer.vb">
+      <DependentUpon>frm_modificarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Empleados\frm_modificarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Implementos\frm_añadirImplemento.Designer.vb">
+      <DependentUpon>frm_añadirImplemento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Implementos\frm_añadirImplemento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Implementos\frm_modificaimplemento.Designer.vb">
+      <DependentUpon>frm_modificaimplemento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Implementos\frm_modificaimplemento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Implementos\Implementos.Designer.vb">
+      <DependentUpon>Implementos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Implementos\Implementos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Inventario\frm_inventario.Designer.vb">
+      <DependentUpon>frm_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Inventario\frm_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Inventario\frm_lista_empleados.Designer.vb">
+      <DependentUpon>frm_lista_empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Inventario\frm_lista_empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\frm_reporte_embarcaciones.Designer.vb">
+      <DependentUpon>frm_reporte_embarcaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\frm_reporte_embarcaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Reporte_Empleados.Designer.vb">
+      <DependentUpon>Reporte_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Reporte_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema_AnconcitoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sistema_AnconcitoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema_AnconcitoDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sistema_AnconcitoDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administracion-Seguridad\frm_lista_empleados_usuarios.resx">
+      <DependentUpon>frm_lista_empleados_usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion-Seguridad\perfiles.resx">
+      <DependentUpon>perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asigna\frm_asignarrecursos.resx">
+      <DependentUpon>frm_asignarrecursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frm_Acceso.resx">
+      <DependentUpon>frm_Acceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frm_Principal.resx">
+      <DependentUpon>frm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frm_splash.resx">
+      <DependentUpon>frm_splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Caja\frm_caja.resx">
+      <DependentUpon>frm_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Caja\frm_capital.resx">
+      <DependentUpon>frm_capital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Embarcaciones\frm_añadirEmbarcacion.resx">
+      <DependentUpon>frm_añadirEmbarcacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Embarcaciones\frm_embarcaciones.resx">
+      <DependentUpon>frm_embarcaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Embarcaciones\frm_modificarEmbarcaciones.resx">
+      <DependentUpon>frm_modificarEmbarcaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Empleados\frm_añadirEmpleado.resx">
+      <DependentUpon>frm_añadirEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Empleados\frm_Empleados.resx">
+      <DependentUpon>frm_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion-Seguridad\usuarios.resx">
+      <DependentUpon>usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Empleados\frm_modificarEmpleado.resx">
+      <DependentUpon>frm_modificarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Implementos\frm_añadirImplemento.resx">
+      <DependentUpon>frm_añadirImplemento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Implementos\frm_modificaimplemento.resx">
+      <DependentUpon>frm_modificaimplemento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Implementos\Implementos.resx">
+      <DependentUpon>Implementos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Inventario\frm_inventario.resx">
+      <DependentUpon>frm_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Inventario\frm_lista_empleados.resx">
+      <DependentUpon>frm_lista_empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\frm_reporte_embarcaciones.resx">
+      <DependentUpon>frm_reporte_embarcaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Report1.rdlc" />
+    <EmbeddedResource Include="Reporte\Report2.rdlc" />
+    <EmbeddedResource Include="Reporte\Reporte_Empleados.resx">
+      <DependentUpon>Reporte_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Sistema_AnconcitoDataSet.xsc">
+      <DependentUpon>Sistema_AnconcitoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema_AnconcitoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sistema_AnconcitoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sistema_AnconcitoDataSet.xss">
+      <DependentUpon>Sistema_AnconcitoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema_AnconcitoDataSet1.xsc">
+      <DependentUpon>Sistema_AnconcitoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema_AnconcitoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sistema_AnconcitoDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sistema_AnconcitoDataSet1.xss">
+      <DependentUpon>Sistema_AnconcitoDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\solicit_accept_check_ok_theaction_6340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\Windows_Close_Program_22531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\folders_red_scheduled_tasks_10933 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\10.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="folders_red_scheduled_tasks_10933.ico" />
+    <None Include="iconos\caj.png" />
+    <None Include="iconos\49.png" />
+    <None Include="iconos\Checklist-icon.png" />
+    <None Include="iconos\organizer_calendar_pen_note_6134.png" />
+    <None Include="iconos\calendario.png" />
+    <None Include="iconos\Black-Floppy-icon.png" />
+    <None Include="iconos\save-icon.png" />
+    <None Include="iconos\Actions-user-group-new-icon.png" />
+    <None Include="iconos\Male-user-search-icon.png" />
+    <None Include="iconos\search_find_user_16727.png" />
+    <None Include="iconos\volver.png" />
+    <None Include="iconos\system-software-update-icon.png" />
+    <None Include="iconos\add-1-icon.png" />
+    <None Include="iconos\Add-icon.png" />
+    <None Include="iconos\anadir.png" />
+    <None Include="iconos\datos-generales.jpg" />
+    <None Include="iconos\fondo.png" />
+    <None Include="iconos\implementos.png" />
+    <None Include="iconos\US-dollar-icon.png" />
+    <None Include="iconos\Boat-icon.png" />
+    <None Include="iconos\Actions-list-add-user-icon.png" />
+    <None Include="iconos\empleado.png" />
+    <None Include="iconos\torneo-pez-vela.jpg" />
+    <None Include="iconos\kk.png" />
+    <None Include="iconos\kkkk.png" />
+    <None Include="iconos\doctor256_24904.png" />
+    <None Include="iconos\folder_system_15426.ico" />
+    <None Include="iconos\1492531743-icon-sets-school-outline-hand-drawn-iconfinder02_83203.png" />
+    <None Include="iconos\Calendar-icon %281%29.png" />
+    <None Include="iconos\Apps-preferences-desktop-user-icon.png" />
+    <None Include="iconos\Actions-user-group-delete-icon.png" />
+    <None Include="iconos\Events_icon-icons.com_74693 %282%29.png" />
+    <None Include="iconos\Events_icon-icons.com_74693 %281%29.png" />
+    <None Include="iconos\splas.JPG" />
+    <None Include="iconos\findtheuser_search_search_theuser_4518.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
