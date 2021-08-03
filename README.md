@@ -1,7 +1,7 @@
 ### Hi there 👋
 ### Repositorio Flores Jhonny
 
-Sistema Control de Producción
+Sistema Control de Producción: Consta de Administración, Seguridad, Categorias, Conexión, Registros varios, Reportes.
 
 Para su desarrollo se uso:
 
